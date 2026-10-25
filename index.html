@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semester Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Semester Tracker</h1>
+      <p id="summary">Add your first assignment below.</p>
+      <div class="bar" aria-hidden="true"><span id="progress"></span></div>
+    </header>
+
+    <form id="task-form">
+      <input id="title" placeholder="Assignment or task" required maxlength="80" aria-label="Task title">
+      <input id="subject" placeholder="Subject (e.g. DBMS)" required maxlength="30" aria-label="Subject">
+      <input id="due" type="date" required aria-label="Due date">
+      <select id="priority" aria-label="Priority">
+        <option value="high">High</option>
+        <option value="medium" selected>Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button type="submit">Add task</button>
+    </form>
+
+    <nav id="filters" aria-label="Filter tasks">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="done">Done</button>
+    </nav>
+
+    <ul id="list"></ul>
+    <p id="empty" hidden>No tasks here. Add one above.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
