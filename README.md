@@ -33,4 +33,4 @@ Add your GitHub Pages link here after deploying.
 - Backend with Node.js and a database for login and sync
 
 ## Author
-Ayush Mehra - B.Tech CSE, LNCT Bhopal
+Ravi Mehra - B.Tech CSE, LNCT Bhopal
